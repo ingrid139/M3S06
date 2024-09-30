@@ -62,11 +62,24 @@ Adaptador é um padrão de design estrutural que permite que objetos incompatív
 O Adapter atua como um wrapper entre dois objetos. Ele captura chamadas para um objeto e as transforma em formato e interface reconhecíveis pelo segundo objeto.
 
 ## Comportamental
--Strategy
+- Strategy
 Estratégia é um padrão de design comportamental que transforma um conjunto de comportamentos em objetos e os torna intercambiáveis ​​dentro do objeto de contexto original.
 
 O objeto original, chamado contexto, contém uma referência a um objeto de estratégia. O contexto delega a execução do comportamento ao objeto de estratégia vinculado. Para alterar a maneira como o contexto realiza seu trabalho, outros objetos podem substituir o objeto de estratégia vinculado atualmente por outro.
 
 # References
+- https://docs.microsoft.com/pt-br/dotnet/csharp/programming-guide/exceptions/creating-and-throwing-exceptions
+- https://docs.microsoft.com/pt-br/dotnet/standard/exceptions/best-practices-for-exceptions
+- https://www.webdevtutor.net/blog/c-sharp-variable-conventions
+- https://dotnettutorials.net/lesson/variables-in-csharp/#google_vignette
+- https://www.w3schools.com/CS/cs_variables_identifiers.php
+- https://www.programiz.com/csharp-programming/variables-primitive-data-types
+- https://fernando-machado.medium.com/refatora%C3%A7%C3%A3o-5550f00c327d
 - https://medium.com/@brunobandev/os-princ%C3%ADpios-s-o-l-i-d-em-imagens-1b5233479c21
-- 
+- http://www.macoratti.net/vb_pd1.htm https://medium.com/@text2dipak/design-patterns-using-c-bc905885f797 
+- https://en.wikipedia.org/wiki/Software_design_pattern 
+- https://www.fabiosilvalima.net/design-patterns-no-mundo-real/ 
+- http://www.macoratti.net/13/09/net_dp1.htm
+- https://refactoring.guru/design-patterns/abstract-factory
+- https://refactoring.guru/design-patterns/adapter
+- https://refactoring.guru/design-patterns/strategy
