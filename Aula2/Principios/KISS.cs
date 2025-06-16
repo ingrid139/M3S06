@@ -18,9 +18,9 @@ namespace Aula2.Principios
         }
 
         // Código simples para calcular a soma de dois números
-        public int Somar(int a, int b)
+        public int Somar(int numeroA, int numeroB)
         {
-            return a + b;
+            return numeroA + numeroB;
         }
     }
 }

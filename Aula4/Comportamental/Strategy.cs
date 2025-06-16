@@ -28,7 +28,7 @@
         public void DoSomeBusinessLogic()
         {
             Console.WriteLine("Context: Classificando dados usando a estratégia (não tenho certeza de como isso será feito)");
-            var result = this._strategy.DoAlgorithm(new List<string> { "a", "b", "c", "d", "e" });
+            var result = this._strategy.DoAlgorithm(new List<string> { "b", "c", "a", "d", "e" });
 
             string resultStr = string.Empty;
             foreach (var element in result as List<string>)

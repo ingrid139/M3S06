@@ -18,5 +18,33 @@
         {
             return baseTriangulo * altura / 2;
         }
+
+        //DEPOIS
+        //Com essa abordagem, você pode calcular a área de diferentes formas chamando a mesma função:
+        double areaCirculo = CalcularArea(TipoForma.Circulo, 5);
+        double areaRetangulo = CalcularArea(TipoForma.Retangulo, 4, 6);
+        double areaTriangulo = CalcularArea(TipoForma.Triangulo, 3, 7);
+
+        public static double CalcularArea(TipoForma tipo, params double[] parametros)
+        {
+            switch (tipo)
+            {
+                case TipoForma.Circulo:
+                    return Math.PI * Math.Pow(parametros[0], 2);
+                case TipoForma.Retangulo:
+                    return parametros[0] * parametros[1];
+                case TipoForma.Triangulo:
+                    return parametros[0] * parametros[1] / 2;
+                default:
+                    throw new ArgumentException("Tipo de forma desconhecido");
+            }
+        }
+    }
+
+    public enum TipoForma
+    {
+        Circulo,
+        Retangulo,
+        Triangulo
     }
 }

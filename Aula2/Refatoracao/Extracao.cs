@@ -13,7 +13,10 @@ namespace Aula2.Refatoracao
         //antes
         public void PrintOwing()
         {
-            PrintBanner();
+            //print banner
+            Console.WriteLine("*************************");
+            Console.WriteLine("***** Customer Owes *****");
+            Console.WriteLine("*************************");
             //print details
             Console.WriteLine("name: " + _name);
             Console.WriteLine("amount: " + GetOutstanding());
@@ -26,20 +29,18 @@ namespace Aula2.Refatoracao
             PrintDetails();
         }
 
-        public void PrintDetails()
-        {
-            //print details
-            Console.WriteLine("name: " + _name);
-            Console.WriteLine("amount: " + GetOutstanding());
-        }
-
         public void PrintBanner()
         {
             Console.WriteLine("*************************");
             Console.WriteLine("***** Customer Owes *****");
             Console.WriteLine("*************************");
         }
-
+        public void PrintDetails()
+        {
+            //print details
+            Console.WriteLine("name: " + _name);
+            Console.WriteLine("amount: " + GetOutstanding());
+        }
         public double GetOutstanding()
         {
             return 123.45; // Valor de exemplo

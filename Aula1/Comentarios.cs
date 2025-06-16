@@ -12,7 +12,7 @@ namespace Aula1
         // TODO: Implementar a lógica de autenticação
         public void AuthenticateUser()
         {
-            // Código de autenticação vai aqui
+            throw new NotImplementedException();
         }
         public void Validate()
         {
@@ -26,7 +26,10 @@ namespace Aula1
                 // TODO: Logar a exceção
                 throw;
             }
-
+            finally
+            {
+                //fechar conexão
+            }
         }
 
         // TODO: Refatorar este método para melhorar a legibilidade

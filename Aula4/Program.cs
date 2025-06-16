@@ -8,7 +8,7 @@ namespace Aula4
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("FullStack Educacional - Aula 3, módulo 3 semana 6!");
+            Console.WriteLine("FullStack Educacional - Aula 4, módulo 3 semana 6!");
             Console.WriteLine();
 
             Console.WriteLine("Exemplo do Design Pattern Criacional: AbstractFactory!!");
@@ -44,10 +44,10 @@ namespace Aula4
         public static void GetStrategy()
         {
             /*O código do cliente escolhe uma estratégia concreta e a passa para o contexto. O cliente deve estar ciente das diferenças entre estratégias para fazer a escolha certa.*/
-            var context = new Context();
+            var context = new Context(new ConcreteStrategyA());
 
             Console.WriteLine("Client: A estratégia está definida para classificação normal.");
-            context.SetStrategy(new ConcreteStrategyA());
+            //context.SetStrategy(new ConcreteStrategyA());
             context.DoSomeBusinessLogic();
 
             Console.WriteLine();

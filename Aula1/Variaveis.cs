@@ -9,9 +9,11 @@
 
             // Evitando abreviações confusas
             string customerAddress = "123 Main St";
+            string cAddre = "123 Main St";
 
             // Seguindo a convenção camelCase para variáveis locais em C#
             int numberOfStudents = 25;
+            int number_Of_Students = 25;
 
             // Encontrando um equilíbrio entre clareza e brevidade
             string firstName = "John";

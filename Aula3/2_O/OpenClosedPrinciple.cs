@@ -26,10 +26,18 @@ namespace Aula3._2_S
         }
     }
 
+    public class Terceiro : Remuneravel
+    {
+        public decimal remuneracao()
+        {
+            return 250;
+        }
+    }
+
     public class FolhaDePagamento
     {
         protected decimal saldo;
-
+        
         public void calcular(Remuneravel funcionario)
         {
             this.saldo = funcionario.remuneracao();

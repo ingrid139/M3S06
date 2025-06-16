@@ -45,6 +45,18 @@ namespace Aula3._2_S
         }
     }
 
+    public class TerceiroViolation : Funcionario
+    {
+        public override decimal salario()
+        {
+            throw new NotImplementedException();
+        }
+        public override decimal bolsaAuxilio()
+        {
+            return 250;
+        }
+    }
+
 
     public class FolhaDePagamentoViolation
     {
@@ -61,6 +73,7 @@ namespace Aula3._2_S
                 this.saldo = funcionario.bolsaAuxilio();
             }
             //if PJ... introduzir bugs 
+            //if Terceiro
         }
     }
 

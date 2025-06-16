@@ -27,7 +27,7 @@ namespace Aula4.Criacional
             }
         }
 
-        // Cada Concrete Factory tem uma variante de produto correspondente.
+        // Cada Fábricas Concreta tem uma variante de produto correspondente.
         public class ConcreteFactory2 : IAbstractFactory
         {
             public IAbstractProductA CreateProductA()

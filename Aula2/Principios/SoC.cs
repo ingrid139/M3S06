@@ -27,4 +27,51 @@ namespace Aula2.Principios
             // Lógica para enviar email
         }
     }
+
+    //exemplo2
+    //antes
+    public class Pedido
+    {
+        public void CriarPedido()
+        {
+            // Lógica para criar o pedido
+        }
+
+        public void CalcularTotal()
+        {
+            // Lógica para calcular o total do pedido
+        }
+
+        public void EnviarEmailConfirmacao()
+        {
+            // Lógica para enviar email de confirmação
+        }
+    }
+
+    //DEPOIS
+    /*No exemplo “Depois”, a responsabilidade de criar o pedido, calcular o total e enviar o email de confirmação foi separada em diferentes classes (Pedido, CalculadoraTotal e ServicoEmail). Isso segue o princípio SoC, tornando o código mais modular e fácil de manter*/
+    public class Pedido_
+    {
+        public void CriarPedido()
+        {
+            // Lógica para criar o pedido
+        }
+    }
+
+    public class CalculadoraTotal
+    {
+        public decimal CalcularTotal(Pedido pedido)
+        {
+            // Lógica para calcular o total do pedido
+            return 0; // Exemplo simplificado
+        }
+    }
+
+    public class ServicoEmail_
+    {
+        public void EnviarEmailConfirmacao(Pedido pedido)
+        {
+            // Lógica para enviar email de confirmação
+        }
+    }
 }
